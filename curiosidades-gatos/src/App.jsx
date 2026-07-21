@@ -30,6 +30,10 @@ function App() {
       <Inicio />
       <SobreNosotros />
       <Curiosidades />
+      <ServiciosRazas/>
+      <Galeria/>
+      <FormularioContacto/>
+      <Footer/>
       {/* Resto de tus componentes... */}
 
     </div>
