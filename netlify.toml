@@ -1,6 +1,6 @@
 [build]
-  publish = "dist"
-  command = "npm run build"
+  publish = "curiosidades-gatos/dist"
+  command = "cd curiosidades-gatos && npm run build"
 
 [[redirects]]
   from = "/*"
