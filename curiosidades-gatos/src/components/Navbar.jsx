@@ -12,20 +12,24 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#f8f5ff] text-[#3b1c60] p-4 shadow-sm relative z-50">
-      <div className="max-w-[1400px] mx-auto flex justify-between items-center gap-4">
+    <nav className="bg-[#f8f5ff] text-[#3b1c60] py-4 shadow-sm relative z-50 w-full">
+      {/* 
+        Cambio principal: 
+        Se quitó "max-w-[1400px] mx-auto" para que no se centre. 
+        Se agregó "w-full px-6 md:px-12" para que abarque toda la pantalla con un margen a los lados. 
+      */}
+      <div className="w-full px-6 md:px-12 flex justify-between items-center">
         
-        {/* LOGO (Basado en la imagen) */}
+        {/* LOGO */}
         <a href="#inicio" onClick={cerrarMenu} className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-          <span className="text-4xl">🐱</span> {/* Puedes cambiar este emoji por la etiqueta <img> de tu gatito si la tienes */}
+          <span className="text-4xl">🐱</span> 
           <div className="text-lg font-bold leading-tight text-[#3b1c60]">
             Curiosidades<br/>de los Gatitos
           </div>
         </a>
 
-        {/* VISTA EN LAPTOP / ESCRITORIO (Solo los enlaces de la imagen) */}
+        {/* VISTA EN LAPTOP / ESCRITORIO (Alineado a la derecha) */}
         <div className="hidden lg:flex flex-wrap gap-8 text-sm font-semibold tracking-wide items-center mt-2">
-          {/* INICIO con la línea por debajo para indicar que está activo */}
           <a href="#inicio" className="border-b-2 border-[#3b1c60] pb-1 text-[#3b1c60] hover:text-[#f472b6] transition-colors">INICIO</a>
           <a href="#nosotros" className="pb-1 hover:text-[#f472b6] transition-colors">NOSOTROS</a>
           <a href="#servicios" className="pb-1 hover:text-[#f472b6] transition-colors">SERVICIOS Y PRODUCTOS</a>
