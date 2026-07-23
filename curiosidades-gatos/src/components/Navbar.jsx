@@ -36,11 +36,11 @@ export default function Navbar() {
         </div>
 
         {/* 3. BOTÓN DE TRES PUNTOS (La clase 'lg:hidden' hace que solo aparezca en celulares) */}
-        <button
+        <button>
           onClick={toggleMenu}
           className="lg:hidden p-2 rounded-lg hover:bg-purple-100 transition-colors focus:outline-none ml-auto"
           aria-label="Menú de opciones"
-        >
+        
           <svg className="w-8 h-8 fill-current text-[#3b1c60]" viewBox="0 0 24 24">
             <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
           </svg>
