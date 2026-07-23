@@ -7,7 +7,7 @@ export default function ServiciosRazas() {
         
         {/* TABLA DE SERVICIOS */}
         <h2 className="text-3xl font-black text-center text-[#3b1c60] mb-8">
-          <span className="text-[#51bfa5]">⋐</span> Servicios y Productos <span className="text-[#51bfa5]">⋑</span>
+          <span className="text-[#51bfa5]">⋐</span> Productos <span className="text-[#51bfa5]">⋑</span>
         </h2>
         <div className="bg-white rounded-[2rem] shadow-sm border-[3px] border-[#c2efd8] overflow-hidden mb-16">
           <table className="w-full text-left border-collapse">
