@@ -48,23 +48,25 @@ export default function Navbar() {
       </div>
 
       {/* MENÚ DESPLEGABLE MÓVIL (Aparece únicamente en celular cuando presionas los 3 puntos) */}
-          {menuAbierto && (
-            <div className="lg:hidden absolute right-4 top-16 bg-white text-gray-800 rounded-2xl shadow-2xl p-4 w-64 border border-orange-100 flex flex-col gap-1 z-50">
-              <Link to="/" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">🏠 Inicio</Link>
-              <Link to="/nosotros" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">ℹ️ Sobre Nosotros</Link>
-              <Link to="/mision-vision" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">🎯 Misión y Visión</Link>
-              <Link to="/servicios" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">🛠️ Servicios</Link>
-              <Link to="/clientes" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">👥 Clientes</Link>
-              <Link to="/galeria" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">🖼️ Galería</Link>
-              <Link to="/redes-sociales" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">🌐 Redes Sociales</Link>
-              <Link to="/testimonios" onClick={cerrarMenu} className="hover:bg-orange-50 p-2.5 rounded-xl font-medium transition-colors">💬 Testimonios</Link>
-              
-              <div className="my-1 border-t border-gray-100"></div>
-
-              <Link to="/contacto" onClick={cerrarMenu} className="bg-orange-600 text-white text-center p-2.5 rounded-xl font-semibold hover:bg-orange-700 transition-colors shadow-sm">📞 Contacto</Link>
-              <Link to="/aviso-privacidad" onClick={cerrarMenu} className="hover:bg-orange-50 p-2 rounded-xl text-xs text-gray-500 hover:text-gray-800 transition-colors text-center mt-1">🔒 Aviso de Privacidad</Link>
-            </div>
-          )}
+      {menuAbierto && (
+        <div className="lg:hidden absolute right-4 top-20 bg-white text-[#3b1c60] rounded-2xl shadow-xl p-4 w-64 border border-purple-100 flex flex-col gap-2 z-50">
+          <a href="#inicio" onClick={cerrarMenu} className="hover:bg-purple-50 p-2.5 rounded-xl font-bold border-l-4 border-[#3b1c60] transition-colors">
+            INICIO
+          </a>
+          <a href="#nosotros" onClick={cerrarMenu} className="hover:bg-purple-50 p-2.5 rounded-xl font-semibold transition-colors">
+            NOSOTROS
+          </a>
+          <a href="#servicios" onClick={cerrarMenu} className="hover:bg-purple-50 p-2.5 rounded-xl font-semibold transition-colors">
+            SERVICIOS Y PRODUCTOS
+          </a>
+          <a href="#galeria" onClick={cerrarMenu} className="hover:bg-purple-50 p-2.5 rounded-xl font-semibold transition-colors">
+            GALERÍA
+          </a>
+          <a href="#contacto" onClick={cerrarMenu} className="hover:bg-purple-50 p-2.5 rounded-xl font-semibold transition-colors">
+            CONTACTO
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
