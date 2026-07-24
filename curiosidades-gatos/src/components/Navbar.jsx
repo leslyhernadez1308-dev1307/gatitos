@@ -12,12 +12,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#f8f5ff] text-[#3b1c60] py-4 shadow-sm relative z-50 w-full">
+    <nav className="bg-[#f8f5ff] text-[#3b1c60] py-4 shadow-sm sticky top-0 z-50 w-full transition-all duration-300">
       <div className="w-full px-6 md:px-12 flex justify-between items-center">
         
-        {/* LOGO CARGADO DESDE URL EXTERNA */}
+        {/* LOGO */}
         <a href="#inicio" onClick={cerrarMenu} className="flex items-center gap-3 hover:opacity-90 transition-opacity">
-          {/* Aquí está el logo de gatito usando un enlace de Icons8 */}
           <img 
             src="https://img.icons8.com/color/96/cat.png" 
             alt="Logo Gatitos" 

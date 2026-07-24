@@ -2,47 +2,76 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#56427d] text-white pt-20 pb-6 px-10 relative mt-20">
-      <div className="absolute top-[-50px] left-0 w-full overflow-hidden leading-[0]">
-        <svg viewBox="0 0 1440 320" className="w-[110%] h-[100px] block ola-animada" preserveAspectRatio="none">
-          <path fill="#56427d" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,90.7C672,75,768,85,864,117.3C960,149,1056,203,1152,213.3C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-        </svg>
+    <footer className="bg-[#50377a] py-12 text-white relative w-full">
+      
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-around items-center md:items-start gap-12 px-6">
+        
+        {/* COLUMNA 1: SÍGUENOS */}
+        <div className="flex flex-col items-center">
+          <h3 className="text-xl font-bold mb-6">Síguenos</h3>
+          
+          {/* Iconos Sociales */}
+          <div className="flex gap-4 mb-6">
+            <a href="#" className="bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              <span className="font-bold text-lg">f</span>
+            </a>
+            <a href="#" className="bg-[#c2a3d6] w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              📷
+            </a>
+            <a href="#" className="bg-red-600 w-10 h-10 rounded-full flex items-center justify-center hover:scale-110 transition-transform">
+              ▶
+            </a>
+          </div>
+
+          {/* Gatito original con corazones */}
+          <div className="flex items-center gap-2 text-pink-400 font-bold mb-4">
+             ♡ <span className="text-3xl text-white">😻</span> ♡
+          </div>
+
+          {/* NUEVO CONTENIDO: Tarjeta felina para llenar el espacio */}
+          <div className="flex flex-col items-center bg-white/10 px-5 py-3 rounded-2xl border border-white/20 shadow-sm backdrop-blur-sm mt-2">
+            <p className="text-sm font-medium text-center text-purple-100 mb-2">
+              ¡Miau-chas gracias por tu visita!
+            </p>
+            {/* Gatito estilo pixel art que hace hover (gira un poco al pasar el mouse) */}
+            <img
+              src="https://img.icons8.com/dusk/64/cat.png"
+              alt="Gatito Pixel"
+              className="w-12 h-12 object-contain hover:rotate-12 transition-transform cursor-pointer"
+            />
+          </div>
+        </div>
+
+        {/* COLUMNA 2: INFORMACIÓN */}
+        <div className="flex flex-col items-center md:items-start">
+          <h3 className="text-xl font-bold mb-6">Información</h3>
+          
+          <div className="flex flex-col gap-3">
+            <a href="#inicio" className="text-white hover:text-[#f472b6] transition-colors flex items-center gap-2 font-medium tracking-wide">
+              <span>🐾</span> INICIO
+            </a>
+            <a href="#nosotros" className="text-white hover:text-[#f472b6] transition-colors flex items-center gap-2 font-medium tracking-wide">
+              <span>🐾</span> NOSOTROS
+            </a>
+            <a href="#servicios" className="text-white hover:text-[#f472b6] transition-colors flex items-center gap-2 font-medium tracking-wide">
+              <span>🐾</span> SERVICIOS Y PRODUCTOS
+            </a>
+            <a href="#aliados" className="text-white hover:text-[#f472b6] transition-colors flex items-center gap-2 font-medium tracking-wide">
+              <span>🐾</span> ALIADOS
+            </a>
+            <a href="#galeria" className="text-white hover:text-[#f472b6] transition-colors flex items-center gap-2 font-medium tracking-wide">
+              <span>🐾</span> GALERÍA
+            </a>
+            <a href="#contacto" className="text-white hover:text-[#f472b6] transition-colors flex items-center gap-2 font-medium tracking-wide">
+              <span>🐾</span> CONTACTO
+            </a>
+          </div>
+        </div>
+
       </div>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-sm relative z-10 border-b border-[#6c5598] pb-10">
-        <div>
-          <h4 className="font-black mb-4 text-white text-lg">Navegación</h4>
-          <ul className="space-y-3 font-bold opacity-90 text-sm">
-            <li>🐾 Inicio</li>
-            <li>🐾 Sobre nosotros</li>
-            <li>🐾 Servicios y Razas</li>
-            <li>🐾 Galería</li>
-            <li>🐾 Contacto</li>
-          </ul>
-        </div>
-        <div className="text-center flex flex-col items-center">
-          <h4 className="font-black mb-4 text-white text-lg">Síguenos</h4>
-          <div className="flex gap-4 justify-center mb-6">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-[#1877f2] w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl hover:scale-110 transition-transform">f</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-tr from-[#fbc2eb] to-[#a18cd1] w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl text-[#3b1c60] hover:scale-110 transition-transform">📸</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="bg-[#ff0000] w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl hover:scale-110 transition-transform">▶</a>
-          </div>
-          <div className="text-6xl mt-4 relative">
-            🐱
-            <span className="text-xl absolute -left-4 bottom-2 text-[#f472b6]">♡</span>
-            <span className="text-xl absolute -right-4 bottom-2 text-[#f472b6]">♡</span>
-          </div>
-        </div>
-        <div className="text-left md:text-right">
-          <h4 className="font-black mb-4 text-white text-lg">Información</h4>
-          <ul className="flex flex-wrap justify-center gap-6 text-xs font-bold text-[#4c2577] uppercase mt-4 md:mt-0 tracking-widest">
-            <li><a href="#inicio" className="hover:text-[#f472b6] border-b-[3px] border-[#3b1c60] pb-1">INICIO</a></li>
-            <li><a href="#nosotros" className="hover:text-[#f472b6]">NOSOTROS</a></li>
-            <li><a href="#servicios" className="hover:text-[#f472b6]">SERVICIOS Y PRODUCTOS</a></li>
-            <li><a href="#aliados" className="hover:text-[#f472b6]">ALIADOS</a></li>
-            <li><a href="#galeria" className="hover:text-[#f472b6]">GALERÍA</a></li>
-            <li><a href="#contacto" className="hover:text-[#f472b6]">CONTACTO</a></li>
-          </ul>
-        </div>
+
+      <div className="max-w-5xl mx-auto mt-10 border-t border-purple-400/30 pt-4 text-center text-sm text-purple-200">
+        © 2026 Curiosidades de los Gatitos.
       </div>
     </footer>
   );
